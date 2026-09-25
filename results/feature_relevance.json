@@ -1,0 +1,312 @@
+{
+  "protocol": {
+    "epochs": 250,
+    "batch_size": 64,
+    "seed": 0,
+    "relevance_threshold": 0.1,
+    "calibration": {
+      "signal_scale": 0.8658447265624999,
+      "quad_scale": 1.08984375,
+      "proxy_linear_auroc": 0.8078304568500411,
+      "proxy_nonlinear_auroc": 0.8330240355466232,
+      "target_linear_auroc": 0.807,
+      "target_nonlinear_auroc": 0.831
+    }
+  },
+  "feature_names": [
+    "Height",
+    "Temperature",
+    "Blood pH",
+    "Fraction inspired oxygen",
+    "Capillary refill rate",
+    "Heart Rate",
+    "Systolic blood pressure",
+    "Diastolic blood pressure",
+    "Mean blood pressure",
+    "Weight",
+    "Glucose",
+    "Respiratory rate",
+    "Oxygen saturation",
+    "GCS: eye opening",
+    "GCS: motor response",
+    "GCS: verbal response",
+    "GCS: total"
+  ],
+  "missing_pct": [
+    94.77182595095795,
+    29.793889292297383,
+    55.225381221024406,
+    75.0656314584148,
+    98.87169748086913,
+    5.496285538736525,
+    10.556889906719544,
+    10.534547282578338,
+    15.399653689325813,
+    60.49265486231358,
+    45.668323744623805,
+    8.400826677093225,
+    6.322962631961124,
+    22.633078255041056,
+    22.102440931687426,
+    22.57163603865274,
+    25.17455175110317
+  ],
+  "relevance": {
+    "LinearHorseshoe": [
+      0.012551671825349331,
+      0.0883912667632103,
+      0.03469140827655792,
+      0.13225679099559784,
+      0.03756938874721527,
+      0.1673761010169983,
+      0.1453453004360199,
+      0.2455698847770691,
+      0.2057344913482666,
+      0.016815289855003357,
+      0.1025361642241478,
+      0.26359525322914124,
+      0.308659166097641,
+      0.22373026609420776,
+      0.27998241782188416,
+      0.30437102913856506,
+      0.31161224842071533
+    ],
+    "HorseshoeBNN": [
+      0.031941529363393784,
+      0.08429336547851562,
+      0.8845609426498413,
+      0.13328632712364197,
+      0.01986120268702507,
+      0.16554152965545654,
+      0.8271662592887878,
+      0.23510950803756714,
+      0.1973731368780136,
+      0.007500236388295889,
+      0.09855515509843826,
+      0.27063021063804626,
+      0.3511141240596771,
+      0.21860338747501373,
+      0.34591177105903625,
+      0.36697375774383545,
+      0.35316741466522217
+    ],
+    "LinearGaussian": [
+      0.02219732105731964,
+      0.10525305569171906,
+      0.04890137165784836,
+      0.15535210072994232,
+      0.048709455877542496,
+      0.17828212678432465,
+      0.15024791657924652,
+      0.2634476125240326,
+      0.21539628505706787,
+      0.02174672856926918,
+      0.11743564158678055,
+      0.28409260511398315,
+      0.34117528796195984,
+      0.24191394448280334,
+      0.2957545220851898,
+      0.33237916231155396,
+      0.33507367968559265
+    ],
+    "GaussianBNN": [
+      0.41643768548965454,
+      0.5921303629875183,
+      2.2779738903045654,
+      0.7998828887939453,
+      0.3632048964500427,
+      0.7084728479385376,
+      2.4296088218688965,
+      0.9162760376930237,
+      1.0286130905151367,
+      0.7172641158103943,
+      0.4931182563304901,
+      1.0521786212921143,
+      0.9644971489906311,
+      1.0862523317337036,
+      1.6388267278671265,
+      1.4523348808288574,
+      1.6968717575073242
+    ]
+  },
+  "claims": {
+    "C1_irrelevant_both": {
+      "per_feature": {
+        "Height": {
+          "in_linear": false,
+          "in_bnn": false,
+          "holds": true
+        },
+        "Capillary refill rate": {
+          "in_linear": true,
+          "in_bnn": false,
+          "holds": false
+        }
+      },
+      "holds": false
+    },
+    "C2_pH_bnn_only": {
+      "in_linear": true,
+      "in_bnn": true,
+      "holds": false
+    },
+    "selected_linear": [
+      "Blood pH",
+      "Capillary refill rate",
+      "Diastolic blood pressure",
+      "Fraction inspired oxygen",
+      "GCS: eye opening",
+      "GCS: motor response",
+      "GCS: total",
+      "GCS: verbal response",
+      "Glucose",
+      "Heart Rate",
+      "Mean blood pressure",
+      "Oxygen saturation",
+      "Respiratory rate",
+      "Systolic blood pressure",
+      "Temperature"
+    ],
+    "selected_bnn": [
+      "Blood pH",
+      "Diastolic blood pressure",
+      "Fraction inspired oxygen",
+      "GCS: eye opening",
+      "GCS: motor response",
+      "GCS: total",
+      "GCS: verbal response",
+      "Glucose",
+      "Heart Rate",
+      "Mean blood pressure",
+      "Oxygen saturation",
+      "Respiratory rate",
+      "Systolic blood pressure"
+    ]
+  },
+  "histogram": {
+    "LinearHorseshoe": {
+      "gap_decades": 0.3715752287921097,
+      "below": 0.12056454435799943,
+      "above": 0.28365787035389917,
+      "n_below": 4,
+      "n_above": 13,
+      "min_side": 2
+    },
+    "HorseshoeBNN": {
+      "gap_decades": 0.42143768736917875,
+      "below": 0.03611003812547717,
+      "above": 0.09529401696846529,
+      "n_below": 3,
+      "n_above": 14,
+      "min_side": 2
+    },
+    "LinearGaussian": {
+      "gap_decades": 0.3413127145625884,
+      "below": 0.0650613389671839,
+      "above": 0.14276958969834147,
+      "n_below": 2,
+      "n_above": 15,
+      "min_side": 2
+    },
+    "GaussianBNN": {
+      "gap_decades": 0.1278997205807364,
+      "below": 0.6984135644527589,
+      "above": 0.9375887467153289,
+      "n_below": 15,
+      "n_above": 2,
+      "min_side": 2
+    }
+  },
+  "tau": {
+    "HorseshoeBNN": [
+      0.0729842260479927,
+      0.12753358483314514,
+      0.7055517435073853,
+      0.17142531275749207,
+      0.059685055166482925,
+      0.2062513679265976,
+      0.6440871953964233,
+      0.2599967122077942,
+      0.22679638862609863,
+      0.041348326951265335,
+      0.13722343742847443,
+      0.3001226782798767,
+      0.3554631173610687,
+      0.2465689331293106,
+      0.3474315404891968,
+      0.364796906709671,
+      0.35574331879615784
+    ],
+    "LinearHorseshoe": [
+      0.3331688940525055,
+      0.3786386549472809,
+      0.3552013635635376,
+      0.41773685812950134,
+      0.3677469789981842,
+      0.44485557079315186,
+      0.44862300157546997,
+      0.49635323882102966,
+      0.4808487296104431,
+      0.32216355204582214,
+      0.3949558436870575,
+      0.5155681371688843,
+      0.5437406301498413,
+      0.4875238537788391,
+      0.513114333152771,
+      0.529940128326416,
+      0.5449618101119995
+    ]
+  },
+  "refit_check": {
+    "all_features": {
+      "error_rate": [
+        0.11768962198068951,
+        0.0009692679060189101
+      ],
+      "auroc": [
+        0.8388459535501387,
+        0.0039002146528140493
+      ],
+      "nll": [
+        0.2934028822677077,
+        0.0024761057674003314
+      ]
+    },
+    "selected_only": {
+      "error_rate": [
+        0.11768963758133788,
+        0.0015364138827017252
+      ],
+      "auroc": [
+        0.8376174329043605,
+        0.004722036155963311
+      ],
+      "nll": [
+        0.29431100338124805,
+        0.003093557606484396
+      ]
+    },
+    "n_features_kept": 13,
+    "kept": [
+      "Blood pH",
+      "Diastolic blood pressure",
+      "Fraction inspired oxygen",
+      "GCS: eye opening",
+      "GCS: motor response",
+      "GCS: total",
+      "GCS: verbal response",
+      "Glucose",
+      "Heart Rate",
+      "Mean blood pressure",
+      "Oxygen saturation",
+      "Respiratory rate",
+      "Systolic blood pressure"
+    ],
+    "dropped": [
+      "Capillary refill rate",
+      "Height",
+      "Temperature",
+      "Weight"
+    ]
+  }
+}

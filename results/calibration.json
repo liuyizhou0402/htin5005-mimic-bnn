@@ -1,0 +1,8 @@
+{
+  "signal_scale": 0.8658447265624999,
+  "quad_scale": 1.08984375,
+  "proxy_linear_auroc": 0.8078304568500411,
+  "proxy_nonlinear_auroc": 0.8330240355466232,
+  "target_linear_auroc": 0.807,
+  "target_nonlinear_auroc": 0.831
+}

@@ -1,0 +1,14 @@
+# Report prose is NOT published before submission: Turnitin crawls the web
+# and would flag the submitted report as matching this repository.
+report/
+
+# Full text of the base paper -- not ours to redistribute.
+docs/
+
+# Run logs contain absolute local paths; results/*.json are the canonical output.
+*.log
+
+.venv/
+__pycache__/
+*.pyc
+.DS_Store

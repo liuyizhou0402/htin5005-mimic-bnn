@@ -1,0 +1,218 @@
+{
+  "table2_deltas": [
+    {
+      "model": "LinearGaussian",
+      "metric": "error_rate",
+      "ours": 0.1234434743550153,
+      "se": 0.0012032915682822277,
+      "paper": 0.129,
+      "delta": -0.005556525644984697,
+      "z": -1.8521752149948991,
+      "calibrated": false
+    },
+    {
+      "model": "LinearGaussian",
+      "metric": "auroc",
+      "ours": 0.8082419262018499,
+      "se": 0.004380526010334498,
+      "paper": 0.807,
+      "delta": 0.001241926201849819,
+      "z": 0.31048155046245474,
+      "calibrated": true
+    },
+    {
+      "model": "LinearGaussian",
+      "metric": "nll",
+      "ours": 0.3122153560614487,
+      "se": 0.0022927076061331508,
+      "paper": 0.321,
+      "delta": -0.008784643938551329,
+      "z": -2.196160984637832,
+      "calibrated": false
+    },
+    {
+      "model": "GaussianBNN",
+      "metric": "error_rate",
+      "ours": 0.11925406049490157,
+      "se": 0.0010178528512416022,
+      "paper": 0.123,
+      "delta": -0.003745939505098425,
+      "z": -1.248646501699475,
+      "calibrated": false
+    },
+    {
+      "model": "GaussianBNN",
+      "metric": "auroc",
+      "ours": 0.8348913717047084,
+      "se": 0.004098947023647892,
+      "paper": 0.83,
+      "delta": 0.004891371704708436,
+      "z": 1.222842926177109,
+      "calibrated": false
+    },
+    {
+      "model": "GaussianBNN",
+      "metric": "nll",
+      "ours": 0.29621079053724486,
+      "se": 0.0025380811978905253,
+      "paper": 0.304,
+      "delta": -0.007789209462755131,
+      "z": -1.9473023656887827,
+      "calibrated": false
+    },
+    {
+      "model": "LinearHorseshoe",
+      "metric": "error_rate",
+      "ours": 0.1237227103861954,
+      "se": 0.0013603465943353575,
+      "paper": 0.13,
+      "delta": -0.00627728961380461,
+      "z": -2.092429871268203,
+      "calibrated": false
+    },
+    {
+      "model": "LinearHorseshoe",
+      "metric": "auroc",
+      "ours": 0.8083484645221566,
+      "se": 0.004415858190529464,
+      "paper": 0.807,
+      "delta": 0.001348464522156534,
+      "z": 0.3371161305391335,
+      "calibrated": false
+    },
+    {
+      "model": "LinearHorseshoe",
+      "metric": "nll",
+      "ours": 0.31228414176315683,
+      "se": 0.0022646350850413785,
+      "paper": 0.32,
+      "delta": -0.007715858236843176,
+      "z": -1.928964559210794,
+      "calibrated": false
+    },
+    {
+      "model": "HorseshoeBNN",
+      "metric": "error_rate",
+      "ours": 0.11746678769390091,
+      "se": 0.001377549209620902,
+      "paper": 0.122,
+      "delta": -0.004533212306099085,
+      "z": -2.2666061530495427,
+      "calibrated": false
+    },
+    {
+      "model": "HorseshoeBNN",
+      "metric": "auroc",
+      "ours": 0.8381930176115725,
+      "se": 0.0043614987871463,
+      "paper": 0.831,
+      "delta": 0.007193017611572539,
+      "z": 1.7982544028931347,
+      "calibrated": true
+    },
+    {
+      "model": "HorseshoeBNN",
+      "metric": "nll",
+      "ours": 0.2936564024932652,
+      "se": 0.0027562215822663863,
+      "paper": 0.304,
+      "delta": -0.010343597506734803,
+      "z": -2.5858993766837006,
+      "calibrated": false
+    },
+    {
+      "model": "Lasso",
+      "metric": "error_rate",
+      "ours": 0.12288484632972436,
+      "se": 0.0011967810798971038,
+      "paper": 0.129,
+      "delta": -0.006115153670275639,
+      "z": -3.0575768351378194,
+      "calibrated": false
+    },
+    {
+      "model": "Lasso",
+      "metric": "auroc",
+      "ours": 0.8084202970347738,
+      "se": 0.004312751878728736,
+      "paper": 0.795,
+      "delta": 0.013420297034773765,
+      "z": 3.355074258693441,
+      "calibrated": false
+    },
+    {
+      "model": "Lasso",
+      "metric": "nll",
+      "ours": 0.3122445130772021,
+      "se": 0.002339369769584372,
+      "paper": 0.325,
+      "delta": -0.012755486922797932,
+      "z": -3.188871730699483,
+      "calibrated": false
+    },
+    {
+      "model": "SVM",
+      "metric": "error_rate",
+      "ours": 0.12511876577175135,
+      "se": 0.0007126954411746963,
+      "paper": 0.129,
+      "delta": -0.0038812342282486534,
+      "z": -1.2937447427495512,
+      "calibrated": false
+    },
+    {
+      "model": "RandomForest",
+      "metric": "error_rate",
+      "ours": 0.11657265221202225,
+      "se": 0.0008162000933722466,
+      "paper": 0.125,
+      "delta": -0.008427347787977754,
+      "z": -4.213673893988877,
+      "calibrated": false
+    }
+  ],
+  "claims": [
+    {
+      "claim": "BNN beats the linear model on AUROC",
+      "ours": 0.029844553089415915,
+      "paper": 0.02399999999999991,
+      "holds": true,
+      "note": "calibration targeted this gap, so it is not independent evidence"
+    },
+    {
+      "claim": "HorseshoeBNN >= GaussianBNN on AUROC",
+      "ours": 0.0033016459068641035,
+      "paper": 0.0010000000000000009,
+      "holds": true,
+      "note": "free: nothing in the calibration separates these two"
+    },
+    {
+      "claim": "LinearHorseshoe ~= LinearGaussian",
+      "ours": 0.00010653832030671495,
+      "paper": 0.0,
+      "holds": true,
+      "note": "free"
+    },
+    {
+      "claim": "Lasso worse than LinearGaussian on AUROC",
+      "ours": 0.0001783708329239353,
+      "paper": -0.01200000000000001,
+      "holds": false,
+      "note": "free"
+    },
+    {
+      "claim": "RandomForest worse than HorseshoeBNN on error rate",
+      "ours": -0.0008941354818786662,
+      "paper": 0.0030000000000000027,
+      "holds": false,
+      "note": "free"
+    },
+    {
+      "claim": "HorseshoeBNN recalls more deaths than LinearHorseshoe",
+      "ours": 0.046700705598695186,
+      "paper": 0.08200000000000002,
+      "holds": true,
+      "note": "free"
+    }
+  ]
+}
