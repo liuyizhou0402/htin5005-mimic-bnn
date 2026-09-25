@@ -17,11 +17,11 @@ RUN, IN ORDER  (from the src/ directory)
 ----------------------------------------------------------------------
     cd src
     python calibrate.py                                  ~1 min
-    python shrinkage_probe.py                            ~4 min
+    python shrinkage_probe.py                            ~4 min   -> data for report Figure 2
     python run_experiments.py                           ~19 min   -> report Tables 4, 6
     python reproduction_report.py                        <1 min   -> report Table 5
     python lasso_diagnostic.py                           <1 min   -> report Section B.3.3
-    python feature_relevance.py --epochs 250 --batch-size 64   ~15 min -> report Figure 1
+    python feature_relevance.py --epochs 250 --batch-size 64   ~15 min -> report Figures 1, A2
     python bonus.py --folds 5 --batch-size 64            ~8 min   -> report Table 7, Section B.4
     python make_figures.py                               <1 min   -> figures/
 
